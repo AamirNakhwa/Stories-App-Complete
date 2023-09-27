@@ -77,9 +77,9 @@ async function run() {
     }
 }
 
-app.get('/', (req, res) => {
-    res.status(200).send('Welcome');
-});
+// app.get('/', (req, res) => {
+//     res.status(200).send('Welcome');
+// });
 
 async function getEmbedding(queryText) {
     const response = await openai.embeddings.create({

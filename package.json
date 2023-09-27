@@ -2,7 +2,7 @@
   "name": "stories-app-pinecone",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,6 +16,6 @@
     "mongodb": "^6.1.0",
     "morgan": "^1.10.0",
     "nanoid": "^4.0.2",
-    "openai": "^4.4.0"
+    "openai": "^4.6.0"
   }
 }
