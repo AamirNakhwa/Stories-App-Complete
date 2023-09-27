@@ -4,11 +4,10 @@ const nanoid = customAlphabet('1234567890', 20)
 import cors from 'cors';
 import path from 'path';
 import morgan from 'morgan';
-import OpenAI from "./node_modules/openai/index.mjs";
+import OpenAI from "./node_modules/openai/index.js";
 import dotenv from 'dotenv';
 import { PineconeClient } from "@pinecone-database/pinecone";
-import { MongoClient, ObjectId, ServerApiVersion } from 'mongodb';
-import { Console } from 'console';
+import { MongoClient, ObjectId } from 'mongodb';
 
 const __dirname = path.resolve();
 dotenv.config();

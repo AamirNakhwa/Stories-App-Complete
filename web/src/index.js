@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import axios from 'axios';
 import './index.css';
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://stories-d7y7b1gql-aamirnakhwa.vercel.app';
 
 function App() {
   let [stories, setStories] = useState([]);
@@ -119,7 +119,7 @@ function App() {
 }
 
 function Story(props) {
-  const { title, category, body } = props.data.metadata;
+  const { title, category, body } = props.data;
   
   const [isEditing, setEditing] = useState(false);
   let [editingStoryID, setEditingStoryID] = useState(null);
